@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+    border-radius: 15px;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: rotate(25deg);
+    pointer-events: none;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.rank {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.soloq {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.flex {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
