@@ -1,0 +1,320 @@
+Deadly Kennen
+Swamp Master Kennen
+Ruined Karma
+Urfrider Corki
+Dragonwing Corki
+Arcade Corki
+Blade Queen Lissandra
+All-star Akali
+Infernal Akali
+Silverfang Akali
+Spooky Gangplank
+Sailor Gangplank
+Captain Gangplank
+Officer Vi
+Forsaken Jayce
+Debonair Jayce
+Undertaker Yorick
+Tempest Janna
+Frost Queen Janna
+Fnatic Janna
+Star Guardian Janna
+Infernal Mordekaiser
+King of Clubs Mordekaiser
+Lord Mordekaiser
+Nightblade Irelia
+Order of the Lotus Irelia
+Divine Sword Irelia
+Striker Ezreal
+Explorer Ezreal
+TPA Ezreal
+Pre-Void Kassadin
+Count Kassadin
+Perseus Pantheon
+Ruthless Pantheon
+Glaive Warrior Pantheon
+Full Metal Pantheon
+Silent Night Sona
+Pool Party Rek'Sai
+DJ Sona
+Lord Darius
+Woad King Darius
+Santa Gragas
+Superfan Gragas
+Gragas Caskbreaker
+Toxic Dr. Mundo
+Mr. Mundoverse
+Rageborn Mundo
+Void Bringer Illaoi
+TPA Mundo
+Guardian of the Sands Kha'Zix
+Battle Regalia Poppy
+Mad Hatter Shaco
+Royal Shaco
+Freljord Taliyah
+Victorious Sona
+Reaper Hecarim
+Arcade Hecarim
+Bird of Prey Anivia
+Prehistoric Anivia
+Gladiator Draven
+Beast Hunter Draven
+Snow Bunny Nidalee
+Leopard Nidalee
+Pharaoh Nidalee
+Warring Kingdoms Nidalee
+Battlecast Vel'Koz
+Freljord Rammus
+Galactic Nasus
+Shadowfire Kindred
+Pharaoh Nasus
+Infernal Nasus
+Fright Night Draven
+Victorious Anivia
+Emumu
+Kittalee
+Academy Ekko
+Wicked Lulu
+Pool Party Lulu
+High Noon Jhin
+Hazmat Heimerdinger
+Battlecast Prime Cho'Gath
+Prehistoric Cho'Gath
+El Tigre Braum
+Santa Braum
+Pentakill Karthus
+Mad Scientist Ziggs
+Pool Party Ziggs
+Master Arcanist Ziggs
+Battlecast Alpha Skarner
+Earthrune Skarner
+PROJECT: Yasuo
+High Noon Yasuo
+Vandal Twitch
+Pickpocket Twitch
+Nightraven Fiora
+PROJECT: Fiora
+Masquerade Evelynn
+Worlds 2013 Thresh
+Blood Moon Thresh
+Soaring Sword Fiora
+Arcana Xayah
+Poro Rider Sejuani
+Sea Dog Yasuo
+Augmented Singed
+SSW Singed
+Full Machine Viktor
+Black Scourge Singed
+Lunar Emperor Thresh
+Creator Viktor
+Siren Cassiopeia
+Victorious Sejuani
+Old Saint Zilean
+Groovy Zilean
+Special Weapon Zac
+Time Machine Zilean
+Abyssal Nautilus
+Warden Nautilus
+Rumble in the Jungle
+Blade Mistress Morgana
+Blackthorn Morgana
+Ghost Bride Morgana
+PROJECT: Zed
+SKT T1 Zed
+Shockblade Zed
+Arctic Ops Varus
+Arclight Varus
+Varus Swiftbolt
+Infernal Varus
+Vindicator Vayne
+Aristocrat Vayne
+SKT T1 Vayne
+PROJECT: Vayne
+Vandal Jax
+Nemesis Jax
+Empyrean Jax
+King Tryndamere
+Viking Tryndamere
+Beast Hunter Tryndamere
+Striker Lucian
+Demacia Vice Lucian
+Gentleman Gnar
+Pulsefire Lucian
+Sherwood Forest Ashe
+Victorious Tryndamere
+Woad Ashe
+Queen Ashe
+Amethyst Ashe
+Heartseeker Ashe
+Headhunter Rengar
+Worlds 2017 Ashe
+SSW Rengar
+Super Galaxy Gnar
+High Noon Senna
+Acolyte Lee Sin
+Dragon Fist Lee Sin
+Candy Cane Miss Fortune
+Arcade Miss Fortune
+Thunder Lord Volibear
+Runeguard Volibear
+Captain Volibear
+The Thousand-Pierced Bear
+Apocalyptic Brand
+Ruined Miss Fortune
+Grungy Nunu & Willump
+Nunu & Willump Bot
+TPA Nunu & Willump
+Fisherman Fizz
+Tundra Fizz
+Void Fizz
+General Wukong
+Tundra Hunter Warwick
+Firefang Warwick
+Hired Gun Graves
+Marauder Warwick
+Cutthroat Graves
+TPA Orianna
+Winter Wonder Orianna
+Riot Girl Tristana
+Earnest Elf Tristana
+Firefighter Tristana
+Guerilla Tristana
+Buccaneer Tristana
+Rocket Girl Tristana
+Battle Professor Graves
+Challenger Ahri
+Popstar Ahri
+Arcade Ahri
+Blood Moon Elise
+SKT T1 Elise
+Recon Teemo
+Astronaut Teemo
+Cottontail Teemo
+Panda Teemo
+Ice Drake Shyvana
+Arcade Kai'Sa
+Darkforge Jarvan IV
+Reaper Soraka
+Order of the Banana Soraka
+Runeborn Xerath
+Scorched Earth Xerath
+Galactic Renekton
+Pool Party Renekton
+Prehistoric Renekton
+SKT T1 Renekton
+Haunted Zyra
+SKT T1 Zyra
+Warrior Princess Sivir
+Arcana Ahri
+Snowstorm Sivir
+Warden Sivir
+Pizza Delivery Sivir
+Goalkeeper Maokai
+Sorceress Lux
+Imperial Lux
+Star Guardian Lux
+Frozen Terror Nocturne
+Ravager Nocturne
+Zombie Ryze
+Frozen Shen
+SKT T1 Ryze
+Yellow Jacket Shen
+Blood Moon Shen
+TPA Shen
+Red Card Katarina
+Kitty Cat Katarina
+Ann-Sivir-sary
+Soul Fighter Lux
+Warring Kingdoms Katarina
+Longhorn Alistar
+Infernal Alistar
+Gravelord Azir
+Sweeper Alistar
+Shamrock Malphite
+Coral Reef Malphite
+Conqueror Alistar
+Chosen Master Yi
+Ionia Master Yi
+Headhunter Master Yi
+River Spirit Nami
+Urf the Nami-tee
+Cosmic Blade Master Yi
+Lion Dance Kog'Maw
+Goalkeeper Blitzcrank
+iBlitzcrank
+Viridian Kayle
+Justicar Aatrox
+Riot Kayle
+PsyOps Master Yi
+Master Chef Tahm Kench
+Lancer Paragon Blitzcrank
+Arcana Tahm Kench
+Lunar Eclipse Aatrox
+Debonair Master Yi
+Spirit Blossom Yone
+Spectral Fiddlesticks
+Union Jack Fiddlesticks
+Pumpkinhead Fiddlesticks
+Firecracker Jinx
+Crime City Jinx
+Victorious Kog'Maw
+Zenith Games Blitzcrank
+Star Guardian Jinx
+Safari Caitlyn
+Arctic Warfare Caitlyn
+Headhunter Caitlyn
+Count Vladimir
+Marquis Vladimir
+Ashen Lord Aurelion Sol
+Blood Lord Vladimir
+Tyrant Swain
+Wicked LeBlanc
+Prestigious LeBlanc
+Victorious Master Yi
+Crimson Elite Riven
+Dragonblade Riven
+Queen of Diamonds Syndra
+Butcher Urgot
+Spirit Blossom Riven
+SSW Talon
+Junkyard Trundle
+Elderwood Bard
+Phoenix Quinn
+Secret Agent Xin Zhao
+Shadow Prince Malzahar
+Snow Day Malzahar
+Jack of Hearts Twisted Fate
+Beezahar
+Tango Twisted Fate
+Valkyrie Leona
+Red Card Twisted Fate
+Iron Solari Leona
+Defender Leona
+Firecracker Xin Zhao
+Pool Party Leona
+PROJECT: Leona
+Dark Valkyrie Diana
+Hextech Galio
+Commando Galio
+Gatekeeper Galio
+Debonair Galio
+Leprechaun Veigar
+Victorious Twisted Fate
+SKT T1 Kalista
+Bad Santa Veigar
+Blood Moon Kalista
+Final Boss Veigar
+Brolaf
+Pentakill Olaf
+Emerald Taric
+Armor of the Fifth Age Taric
+Pool Party Taric
+Red Riding Annie
+Prom Queen Annie
+Panda Annie
+Sweetheart Annie
+Annie-Versary
+Dreadknight Garen
+Steel Legion Garen
+Order of the Lotus Karma
+Candy King Ivern
