@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const ranks = ["IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM", "EMERALD", "DIAMOND", "MASTER", "GRANDMASTER", "CHALLENGER"];
     const divisions = ["IV", "III", "II", "I"];
-
     const container = document.getElementById("cardContainer");
+    let currentModal = null;
 
     function getRandomRank() {
         const tier = ranks[Math.floor(Math.random() * ranks.length)];
@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getRandomLevel() {
-        return Math.floor(Math.random() * 701) + 100; // Level entre 100 e 800
+        return Math.floor(Math.random() * 701) + 100;
     }
 
     function getRandomWinrate() {
-        return (Math.random() * (85 - 30) + 30).toFixed(1) + "%"; // 30% a 85%
+        return (Math.random() * (85 - 30) + 30).toFixed(1) + "%";
     }
 
-    names.forEach((name, index) => {
+    function createCard(name, index) {
         const soloqRank = getRandomRank();
-        const flexRank = Math.random() > 0.3 ? getRandomRank() : "Sem rank"; // 70% chance de ter rank Flex
+        const flexRank = Math.random() > 0.3 ? getRandomRank() : "Sem rank";
         const level = getRandomLevel();
         const winrate = getRandomWinrate();
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.innerHTML = `
             <div class="card-content">
-                <h2>${name}</h2>
+                <h2 class="clickable-name">${name}</h2>
                 <div class="rank soloq">SoloQ: ${soloqRank}</div>
                 <div class="rank flex">Flex: ${flexRank}</div>
                 <div class="level">Level: ${level}</div>
@@ -49,11 +49,64 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
-        container.appendChild(card);
+        card.addEventListener("click", (e) => {
+            if (!e.target.classList.contains("close-btn")) {
+                openModal(card);
+            }
+        });
 
-        // Fade-in com delay
         setTimeout(() => {
             card.classList.add("show");
         }, index * 100);
-    });
+
+        container.appendChild(card);
+    }
+
+    function openModal(card) {
+        if (currentModal) return;
+
+        const overlay = document.createElement("div");
+        overlay.classList.add("card-overlay");
+
+        // Clona o card para o modal
+        const modalCard = card.cloneNode(true);
+        modalCard.classList.add("modal-card");
+        // Garante que o modal card não responda ao hover com escala
+        modalCard.classList.remove("fade-in");
+        
+        // Cria botão fechar
+        const closeButton = document.createElement("button");
+        closeButton.classList.add("close-btn");
+        closeButton.innerText = "X";
+
+        closeButton.addEventListener("click", (e) => {
+            e.stopPropagation();
+            closeModal();
+        });
+
+        // Adiciona botão antes do conteúdo para garantir visibilidade
+        modalCard.insertBefore(closeButton, modalCard.firstChild);
+
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+                closeModal();
+            }
+        });
+
+        overlay.appendChild(modalCard);
+        document.body.appendChild(overlay);
+        document.body.classList.add("modal-open");
+
+        currentModal = { overlay };
+    }
+
+    function closeModal() {
+        if (!currentModal) return;
+
+        currentModal.overlay.remove();
+        document.body.classList.remove("modal-open");
+        currentModal = null;
+    }
+
+    names.forEach((name, index) => createCard(name, index));
 });
