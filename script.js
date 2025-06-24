@@ -1,34 +1,59 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const players = [
-        { name: "The Last Dance#GYN", soloq: "GOLD I", flex: "Sem rank" },
-        { name: "DISC LOLZEIROS#DISC", soloq: "GOLD I", flex: "Sem rank" },
-        { name: "Hand of Noxus#Br01", soloq: "DIAMOND IV", flex: "PLATINUM II" },
-        { name: "Fodão#GYN1", soloq: "DIAMOND I", flex: "MASTER I" },
-        { name: "Fodão#GYN3", soloq: "EMERALD IV", flex: "Sem rank" },
-        { name: "Shadow Uchiha#Carry", soloq: "DIAMOND IV", flex: "GOLD III" },
-        { name: "Fodão#GYN4", soloq: "EMERALD IV", flex: "Sem rank" },
-        { name: "Fodão#GYN5", soloq: "DIAMOND I", flex: "EMERALD I" }
+    const names = [
+        "Ana#PEEL", "Carlos#Mage", "Lucas#ADC", "Mariana#Jungle", "Pedro#Top", "Giovanna#Support", 
+        "Fernando#Tank", "Julia#Carry", "Rafael#Sniper", "Bianca#Heal", "Igor#Assassin", "Camila#Burst",
+        "Felipe#Shield", "Larissa#CC", "Vinicius#DPS", "Sofia#Control", "Diego#Bruiser", "Isabela#Fighter",
+        "Gustavo#Lethal", "Tatiane#Scout", "Leandro#Bot", "Paula#Kite", "Bruno#Roam", "Yasmin#Charm",
+        "Thiago#Gank", "Renata#Split", "Danilo#Engage", "Aline#Zone", "Eduardo#Slow", "Leticia#TrueDmg",
+        "Caio#Outplay", "Fernanda#Wave", "Marcelo#Trap", "Priscila#Roamer", "João#CCChain", "Nathalia#Roar",
+        "André#Wombo", "Marcia#Peel", "Vitor#Duo", "Helena#AutoFill", "Samuel#Baron", "Bruna#EloHell",
+        "Luiz#Backdoor", "Debora#Crit", "Henrique#Meta", "Tatiana#Wintrade", "Rodrigo#Drake", "Sara#SupportGod",
+        "Mauricio#Clutch"
     ];
+
+    const ranks = ["IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM", "EMERALD", "DIAMOND", "MASTER", "GRANDMASTER", "CHALLENGER"];
+    const divisions = ["IV", "III", "II", "I"];
 
     const container = document.getElementById("cardContainer");
 
-    players.forEach((player, index) => {
+    function getRandomRank() {
+        const tier = ranks[Math.floor(Math.random() * ranks.length)];
+        const division = divisions[Math.floor(Math.random() * divisions.length)];
+        return `${tier} ${division}`;
+    }
+
+    function getRandomLevel() {
+        return Math.floor(Math.random() * 701) + 100; // Level entre 100 e 800
+    }
+
+    function getRandomWinrate() {
+        return (Math.random() * (85 - 30) + 30).toFixed(1) + "%"; // 30% a 85%
+    }
+
+    names.forEach((name, index) => {
+        const soloqRank = getRandomRank();
+        const flexRank = Math.random() > 0.3 ? getRandomRank() : "Sem rank"; // 70% chance de ter rank Flex
+        const level = getRandomLevel();
+        const winrate = getRandomWinrate();
+
         const card = document.createElement("div");
         card.classList.add("card", "fade-in");
 
         card.innerHTML = `
             <div class="card-content">
-                <h2>${player.name}</h2>
-                <div class="rank soloq">SoloQ: ${player.soloq}</div>
-                <div class="rank flex">Flex: ${player.flex}</div>
+                <h2>${name}</h2>
+                <div class="rank soloq">SoloQ: ${soloqRank}</div>
+                <div class="rank flex">Flex: ${flexRank}</div>
+                <div class="level">Level: ${level}</div>
+                <div class="winrate">Winrate: ${winrate}</div>
             </div>
         `;
 
         container.appendChild(card);
 
-        // Adiciona efeito de entrada com delay
+        // Fade-in com delay
         setTimeout(() => {
             card.classList.add("show");
-        }, index * 150);
+        }, index * 100);
     });
 });

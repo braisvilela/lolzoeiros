@@ -25,7 +25,7 @@ h1 {
     background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
     border-radius: 15px;
     width: 250px;
-    height: 350px;
+    height: 400px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     position: relative;
@@ -58,15 +58,21 @@ h1 {
 
 .card h2 {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-shadow: 1px 1px 5px #000;
+    word-break: break-word;
 }
 
-.rank {
-    margin: 10px 0;
+.rank, .level, .winrate {
+    margin: 8px 0;
     padding: 10px;
     border-radius: 8px;
     font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.rank:hover {
+    transform: scale(1.1);
 }
 
 .soloq {
@@ -76,6 +82,16 @@ h1 {
 
 .flex {
     background-color: #17a2b8;
+    color: #fff;
+}
+
+.level {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.winrate {
+    background-color: #dc3545;
     color: #fff;
 }
 
