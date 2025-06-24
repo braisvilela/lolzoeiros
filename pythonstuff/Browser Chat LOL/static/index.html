@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat LoL Web</title>
+</head>
+<body>
+    <h1>Conversas LoL</h1>
+    <div id="lista-conversas"></div>
+    <hr>
+    <div id="chat">
+        <h2>Mensagens</h2>
+        <div id="mensagens" style="height:300px; overflow:auto; border:1px solid #ccc;"></div>
+        <input id="input-msg" type="text" placeholder="Digite mensagem">
+        <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+
+    <script>
+        let conversas = [];
+        let conversaSelecionada = null;
+
+        async function carregarConversas() {
+            const res = await fetch('/conversas');
+            conversas = await res.json();
+            const lista = document.getElementById('lista-conversas');
+            lista.innerHTML = '';
+            conversas.forEach(c => {
+                const btn = document.createElement('button');
+                btn.textContent = c.titulo || c.id_conversa;
+                btn.onclick = () => selecionarConversa(c.id_conversa);
+                lista.appendChild(btn);
+            });
+        }
+
+        async function selecionarConversa(id) {
+            conversaSelecionada = id;
+            const res = await fetch(`/conversas/${id}/mensagens`);
+            const msgs = await res.json();
+            const divMensagens = document.getElementById('mensagens');
+            divMensagens.innerHTML = msgs.map(m => `<b>${m.fromSummoner?.displayName || 'Você'}:</b> ${m.body}`).join('<br>');
+        }
+
+        async function enviarMensagem() {
+            const input = document.getElementById('input-msg');
+            const texto = input.value;
+            if (!texto || !conversaSelecionada) return alert('Selecione uma conversa e escreva algo');
+
+            const res = await fetch(`/conversas/${conversaSelecionada}/mensagens`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({mensagem: texto})
+            });
+
+            if (res.ok) {
+                input.value = '';
+                selecionarConversa(conversaSelecionada);  // Atualiza mensagens
+            } else {
+                alert('Erro ao enviar');
+            }
+        }
+
+        carregarConversas();
+        setInterval(() => {
+            if (conversaSelecionada) {
+                selecionarConversa(conversaSelecionada);
+            }
+        }, 3000);  // Atualiza as mensagens a cada 3s
+    </script>
+</body>
+</html>
